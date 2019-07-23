@@ -1,0 +1,13 @@
+page-home {
+
+    $my_red: #ff2424;
+    .my_name{
+        background: $my_red;
+        padding: 1em;
+        color: #FFF;
+        font-weight: 600;
+        &.yellow span{
+            color: map-get($colors, my_yellow);
+        }
+    }
+}

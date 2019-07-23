@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Shopping List
+    </ion-title>
+    <ion-buttons end>
+      <button navPush="AddShoppingItemPage" ion-button>
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="my_name" [ngClass]="{'yellow': my_name === 'naji'}">
+    My Name Is: <span (click)="openPopup(my_name+' louis')">{{my_name}}</span>
+  </div>
+</ion-content>
