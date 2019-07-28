@@ -15,4 +15,9 @@
   <div class="my_name" [ngClass]="{'yellow': my_name === 'naji'}">
     My Name Is: <span (click)="openPopup(my_name+' louis')">{{my_name}}</span>
   </div>
+  <div>
+    <button (click)="presentToast()">
+      Toast
+    </button>
+  </div>
 </ion-content>
